@@ -10,18 +10,16 @@
 
     <form method="POST">
         <p>Digite sua idade:</p>
-        <input type="number" name="nome" placeholder="Digite o seu nome" require>
+        <input type="number" name="number" placeholder="Digite o seu nome" require>
         <button type="submit"> Verificar </button>
     </form>
 
     <?php
-    if (isset($_POST['nome'])){
-        $idade = $_POST['nome'];
+    if (isset($_POST['number'])){
+        $idade = $_POST['number'];
 
      if($idade >= 18){
         echo "<p> Você pode dirigir </p>";
-
-    
     } else{
          echo "<p> Você não pode dirigir </p>";
     }
